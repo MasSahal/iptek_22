@@ -51,20 +51,26 @@
             </div>
         </nav>
 
+        <div class="card mt-5">
+            <div class="card-header">
+                Form Login
+            </div>
+            <div class="card-body">
+                <form action="proses.php" method="post">
+                    <div class="form-group">
+                        <label for="">Username</label>
+                        <input type="text" name="username" id="" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Password</label>
+                        <input type="password" name="password" id="" class="form-control">
+                    </div>
+                    <button type="submit" name="login" class="btn btn-primary">Login</button>
+                </form>
 
-        <form action="#" method="post">
-            <div class="form-group">
-                <label for="nama">Nama</label>
-                <input type="text" name="nama" id="nama" class="form-control">
+                <?= var_dump($_POST); ?>
             </div>
-            <div class="form-group">
-                <label for="nim">NIM</label>
-                <input type="text" name="nim" id="nim" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-primary">Simpan</button>
-        </form>
-        <br><br>
-        <?= var_dump($_POST); ?>
+        </div>
     </div>
 
     <script src="js/jquery.js"></script>
