@@ -8,7 +8,7 @@ if (isset($_POST['login'])) {
     // ambil data password
     $password = $_POST['password'];
 
-    if ($username == "admin") {
+    if ($username == "hilman") {
 
         if ($password == "admin") {
             echo "<h1>Selamat datang Admin!</h1>";

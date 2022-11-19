@@ -56,7 +56,7 @@
                 Form Login
             </div>
             <div class="card-body">
-                <form action="proses.php" method="post">
+                <form action="#" method="post">
                     <div class="form-group">
                         <label for="">Username</label>
                         <input type="text" name="username" id="" class="form-control">
@@ -67,12 +67,12 @@
                     </div>
                     <button type="submit" name="login" class="btn btn-primary">Login</button>
                 </form>
-
-                <?= var_dump($_POST); ?>
+            </div>
+            <div class="card-footer">
+                <?php include('proses.php'); ?>
             </div>
         </div>
     </div>
-
     <script src="js/jquery.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.min.js"></script>
