@@ -52,7 +52,7 @@
         </nav>
 
 
-        <form action="#" method="get">
+        <form action="#" method="post">
             <div class="form-group">
                 <label for="nama">Nama</label>
                 <input type="text" name="nama" id="nama" class="form-control">
@@ -63,6 +63,8 @@
             </div>
             <button type="submit" class="btn btn-primary">Simpan</button>
         </form>
+        <br><br>
+        <?= var_dump($_POST); ?>
     </div>
 
     <script src="js/jquery.js"></script>
